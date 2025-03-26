@@ -19,10 +19,20 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-img {
-    max-width: 100%;
+/* Контейнер для картинок */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Стили для каждой картинки */
+.fungus-image {
+    max-width: 30%;
     height: auto;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 /* Скрыть название гриба по умолчанию */
