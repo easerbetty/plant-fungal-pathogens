@@ -1,7 +1,8 @@
 const fungusData = [
-    { name: "Гриб 1", image: "images/fungus1.jpg" },
-    { name: "Гриб 2", image: "images/fungus2.jpg" },
-    { name: "Гриб 3", image: "images/fungus3.jpg" },
+    { name: "Phyllactinia guttata", image: "https://inaturalist-open-data.s3.amazonaws.com/photos/158232141/medium.jpg" },
+    { name: "Blumeria graminis", image: "https://inaturalist-open-data.s3.amazonaws.com/photos/237099909/medium.jpeg" },
+    { name: "Erysiphe necator", image: "https://inaturalist-open-data.s3.amazonaws.com/photos/159236695/medium.jpg" },
+    { name: "Neoerysiphe galeopsidis", image: "https://inaturalist-open-data.s3.amazonaws.com/photos/250270034/medium.jpeg" },
 ];
 
 let currentIndex = 0;
