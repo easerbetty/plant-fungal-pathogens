@@ -25,4 +25,4 @@ function showAnswer() {
     // Показать ответ на картинку
     document.getElementById("answer").innerText = "Ответ: " + fungusData[currentIndex].name;
 }
-}
+
