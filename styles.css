@@ -1,15 +1,28 @@
-/* Стили для контейнера */
-#card-container {
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin: 20px;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
 }
 
-/* Стили для изображения гриба */
-#fungus-image {
+h1 {
+    color: #333;
+    padding: 20px;
+}
+
+#card-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Скрыть название гриба по умолчанию */
