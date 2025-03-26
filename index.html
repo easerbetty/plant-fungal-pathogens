@@ -13,12 +13,16 @@
     <h1>Квиз: Угадай Грибного Патогена</h1>
 
     <div id="card-container">
-        <!-- Картинка с обработчиком клика -->
-        <img id="fungus-image" src="https://inaturalist-open-data.s3.amazonaws.com/photos/158232141/medium.jpg" alt="Phyllactinia guttata" onclick="showAnswer()">
-        
-        <!-- Название гриба скрыто по умолчанию -->
-        <p id="fungus-name"></p> <!-- Пустой, чтобы не было текста на старте -->
-        
+        <!-- Контейнер для картинок -->
+        <div class="image-container">
+            <img class="fungus-image" src="https://example.com/image1.jpg" alt="Phyllactinia guttata" onclick="showAnswer()">
+            <img class="fungus-image" src="https://example.com/image2.jpg" alt="Phyllactinia guttata" onclick="showAnswer()">
+            <img class="fungus-image" src="https://example.com/image3.jpg" alt="Phyllactinia guttata" onclick="showAnswer()">
+        </div>
+
+        <!-- Название гриба -->
+        <p id="fungus-name"></p>
+
         <!-- Вывод ответа -->
         <p id="answer"></p>
 
