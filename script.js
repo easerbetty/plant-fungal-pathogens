@@ -2,7 +2,7 @@ const fungusData = [
     { 
         name: "Blumeria graminis (Мучнистая роса злаков)", 
         images: [
-            "https://www.inaturalist.org/photos/16545123.jpg", // Пример ссылки на изображение
+            "https://www.inaturalist.org/photos/16545123.jpg", 
             "https://www.inaturalist.org/photos/16253456.jpg",
             "https://www.inaturalist.org/photos/15874129.jpg"
         ] 
@@ -10,7 +10,7 @@ const fungusData = [
     { 
         name: "Phyllactinia guttata (Мучнистая роса фундука)", 
         images: [
-            "https://www.inaturalist.org/photos/20035509.jpg", // Пример ссылки на изображение
+            "https://www.inaturalist.org/photos/20035509.jpg", 
             "https://www.inaturalist.org/photos/20250312163932.png",
             "https://www.inaturalist.org/photos/20250312163907.png"
         ] 
@@ -88,3 +88,29 @@ const fungusData = [
         ] 
     }
 ];
+
+let currentIndex = 0;
+
+function nextCard() {
+    currentIndex++;
+    if (currentIndex >= fungusData.length) {
+        currentIndex = 0; // Начать сначала
+    }
+
+    // Обновление картинок для гриба
+    const images = fungusData[currentIndex].images;
+    const fungusImages = document.querySelectorAll(".fungus-image");
+    
+    fungusImages.forEach((img, index) => {
+        img.src = images[index]; // Обновление каждого изображения
+    });
+
+    document.getElementById("fungus-name").innerText = ""; // Сбросим название после переключения
+    document.getElementById("answer").innerText = ""; // Скрыть ответ
+}
+
+function showAnswer() {
+    // Показать название гриба и ответ при клике на любую картинку
+    document.getElementById("fungus-name").innerText = fungusData[currentIndex].name;
+    document.getElementById("answer").innerText = "Ответ: " + fungusData[currentIndex].name;
+}
