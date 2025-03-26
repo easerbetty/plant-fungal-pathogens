@@ -16,4 +16,13 @@ function nextCard() {
 
     document.getElementById("fungus-image").src = fungusData[currentIndex].image;
     document.getElementById("fungus-name").innerText = fungusData[currentIndex].name;
+    
+    // Убираем текст с ответом
+    document.getElementById("answer").innerText = ""; // Скрываем ответ после переключения карточки
+}
+
+function showAnswer() {
+    // Показать ответ на картинку
+    document.getElementById("answer").innerText = "Ответ: " + fungusData[currentIndex].name;
+}
 }
