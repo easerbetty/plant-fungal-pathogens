@@ -14,6 +14,7 @@ function nextCard() {
         currentIndex = 0; // Начать сначала
     }
 
+    // Обновление изображения и названия гриба
     document.getElementById("fungus-image").src = fungusData[currentIndex].image;
     document.getElementById("fungus-name").innerText = fungusData[currentIndex].name;
     
@@ -25,4 +26,3 @@ function showAnswer() {
     // Показать ответ на картинку
     document.getElementById("answer").innerText = "Ответ: " + fungusData[currentIndex].name;
 }
-
